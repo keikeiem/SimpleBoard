@@ -12,10 +12,10 @@ public class DataAccessObject {
 	
 	public DataAccessObject() {
 		try {
-			String dbURL = "jdbc:mysql://localhost:3306/MyBoard";
+			String dbURL = "jdbc:mysql://localhost:3306/MyBoard?characterEncoding=UTF-8&serverTimezone=UT";
 			String dbUser = "admin";
 			String dbPassword = "admin!234";
-			Class.forName("com.mysql.jdbc.driver");
+			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(dbURL, dbUser, dbPassword);
 		} catch (Exception e) {
 			e.printStackTrace(); // print Exception
