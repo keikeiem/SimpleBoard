@@ -40,7 +40,7 @@
 							aria-expanded="false">접속하기<span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							<li class="active"><a href="login.jsp">로그인</a></li>
+							<li class="active"><a href="login.jsp">로그아웃</a></li>
 							<li><a href="join.jsp">회원가입</a></li>
 						</ul>
 					</li>
@@ -49,39 +49,7 @@
 		</nav>
 		<!-- 로긴폼 -->
 		<div class="container">
-			<div class="col-lg-4"></div>
-			<div class="col-lg-4">
-				<!-- 점보트론 -->
-				<div class="jumbotron" style="padding-top: 20px;">
-					<!-- 로그인 정보를 숨기면서 전송post -->
-					<form method="post" action="joinAction.jsp">
-						<h3 style="text-align: center;">회원가입</h3>
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="아이디" name="id" maxlength="20">
-						</div>
-						<div class="form-group">
-							<input type="password" class="form-control" placeholder="비밀번호" name="password" maxlength="20">
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="이름" name="name" maxlength="20">
-						</div>
-						<div class="form-group" style="text-align: center;">
-							<div class="btn-group" data-toggle="buttons">
-								<label class="btn btn-primary active">
-									<input type="radio" name="gender" autocomplete="off" value="남자" checked>남자
-								</label>
-								<label class="btn btn-primary">
-									<input type="radio" name="gender" autocomplete="off" value="여자">여자
-								</label>
-							</div>
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="이메일" name="email" maxlength="50">
-						</div>
-						<input type="submit" class="btn btn-primary form-control" value="회원가입">
-					</form>
-				</div>
-			</div>
+			main.jsp
 		</div>
 	</body>
 </html>

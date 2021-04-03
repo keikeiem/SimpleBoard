@@ -28,7 +28,8 @@
 			switch (result) {
 				case 1: {
 					// 정상 로그인
-					script.println("location.href = 'main.jsp'");										
+					session.setAttribute("userID", user.getId());
+					script.println("location.href = 'main.jsp'");
 				} break;
 				case 0: {
 					// 로그인 실패
